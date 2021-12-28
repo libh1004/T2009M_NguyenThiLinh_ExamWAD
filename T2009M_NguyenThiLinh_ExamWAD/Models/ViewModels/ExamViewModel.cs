@@ -44,16 +44,14 @@ namespace T2009M_NguyenThiLinh_ExamWAD.Models.ViewModels
         [Required(ErrorMessage = "Please enter exam subject.")]
         public ExamSubject ExamSubject { get; set; }
         [Required(ErrorMessage = "Please enter start time.")]
-        [DataType(DataType.Date)]
-        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:HH:mm}")]
-        public DateTime StartTime { get; set; }
+        public string StartTime { get; set; }
         [Required(ErrorMessage = "Please enter exam date.")]
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime ExamDate { get; set; }
         [Required(ErrorMessage = "Please enter exam duration.")]
         [Range(1, 60, ErrorMessage = "Please enter exam duration with mininum 1min.")]
-        public DateTime ExamDuration { get; set; }
+        public string ExamDuration { get; set; }
         [Required(ErrorMessage = "Please enter class room.")]
         public ClassRoom ClassRoom { get; set; }
         [Required(ErrorMessage = "Please enter faculty.")]

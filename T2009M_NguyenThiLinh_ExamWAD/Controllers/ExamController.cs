@@ -42,7 +42,7 @@ namespace T2009M_NguyenThiLinh_ExamWAD.Controllers
             }
             else
             {
-                TempData["FailMessage"] = "Create exam successful!";
+                TempData["FailMessage"] = "Create exam failed!";
                 return View("Create");
             }
           

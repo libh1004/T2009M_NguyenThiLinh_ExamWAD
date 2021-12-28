@@ -140,6 +140,14 @@
     <Compile Include="Migrations\202112280513545_AddExam.Designer.cs">
       <DependentUpon>202112280513545_AddExam.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202112280707326_AddExam1.cs" />
+    <Compile Include="Migrations\202112280707326_AddExam1.Designer.cs">
+      <DependentUpon>202112280707326_AddExam1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112280710541_AddExam2.cs" />
+    <Compile Include="Migrations\202112280710541_AddExam2.Designer.cs">
+      <DependentUpon>202112280710541_AddExam2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Exam.cs" />
     <Compile Include="Models\ViewModels\ExamViewModel.cs" />
@@ -206,6 +214,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202112280513545_AddExam.resx">
       <DependentUpon>202112280513545_AddExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112280707326_AddExam1.resx">
+      <DependentUpon>202112280707326_AddExam1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112280710541_AddExam2.resx">
+      <DependentUpon>202112280710541_AddExam2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

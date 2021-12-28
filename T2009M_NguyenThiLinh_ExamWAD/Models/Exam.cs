@@ -40,9 +40,9 @@ namespace T2009M_NguyenThiLinh_ExamWAD.Models
     {
         public int Id { get; set; }
         public ExamSubject ExamSubject { get; set; }
-        public DateTime StartTime { get; set; }
+        public string StartTime { get; set; }
         public DateTime ExamDate { get; set; }
-        public DateTime ExamDuration { get; set; }
+        public string ExamDuration { get; set; }
         public ClassRoom ClassRoom { get; set; }
         public Faculty Faculty { get; set; }
         public StatusValue Status { get; set; }

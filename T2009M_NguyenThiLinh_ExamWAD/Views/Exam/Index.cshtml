@@ -5,7 +5,8 @@
 }
 
 <h2>Index</h2>
-
+@TempData["SuccessMessage"]
+@TempData["FailMessage"]
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
@@ -35,30 +36,31 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.ExamSubject)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.StartTime)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ExamDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ExamDuration)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ClassRoom)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Faculty)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Status)
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExamSubject)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExamDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExamDuration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClassRoom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Faculty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+        </tr>
+    }
 
 </table>
