@@ -9,7 +9,7 @@ namespace T2009M_NguyenThiLinh_ExamWAD.Data
 {
     public class MyDbContext : DbContext
     {
-        public MyDbContext() : base("name=ConnectionString")
+        public MyDbContext() : base("name=MyConnectionString")
         {
 
         }
